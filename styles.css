@@ -76,6 +76,16 @@ body a{
 #signup_form input:focus {
     border-color: #333;
 }
+.signup_success{ 
+    color: rgb(31, 187, 31); 
+    font-size: 1rem; 
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    padding: 5px;
+}
 form h2{
     text-align: center;
     font-size: 2rem;
@@ -98,12 +108,6 @@ section p{
     color: rgba(241, 42, 7, 0.959);
     font-size: 0.73rem;
 }
-.signup_success{
-    color: rgb(31, 187, 31);
-    font-size: 1rem;
-    background-color:rgb(226, 218, 218) ;
-    padding: 5px;
-}
 form p a{
     text-decoration: underline;
 }
@@ -116,6 +120,7 @@ form p a{
     /* text-align: center;
     margin-left: 40px; */
 /* }
+
 /* Login */
 #login_form {
     width: 100%;
@@ -148,4 +153,14 @@ form p a{
 }
 #login_form input:focus {
     border-color: #333;
+}
+#login_success{
+    color: rgb(31, 187, 31); 
+    font-size: 1rem; 
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    padding: 5px;
 }

@@ -8,12 +8,13 @@ const name_error = document.getElementById('name_error');
 const email_error = document.getElementById('email_error');
 const password_error = document.getElementById('password_error');
 const repeat_password_error = document.getElementById('repeat_password_error');
+const signup_success = document.getElementById('signup_success')
 const login_email_error = document.getElementById('login_email_error')
 const login_password_error = document.getElementById('login_password_error')
-const signup_success = document.getElementById('signup_success')
 const login_form = document.getElementById('login_form')
 const login_email = document.getElementById('login_email');
 const login_password = document.getElementById('login_password');
+const login_success = document.getElementById('login_success');
 
 if(signup_form){
     signup_form.addEventListener('submit',(e) => {
@@ -46,10 +47,13 @@ if(signup_form){
     if(messages.length > 0){
         e.preventDefault();
     }else{
+        e.preventDefault();
         signup_success.innerText = 'Account created successfully'
         signup_success.classList.add('signup_success')
     }
+    
 })}
+
 if(login_form){
     login_form.addEventListener('submit',(e)=>{
     let messages = [];
@@ -76,6 +80,10 @@ if(login_form){
     }
     if(messages.length > 0){
         e.preventDefault();
+    }else{
+        e.preventDefault();
+        login_success.innerText = 'You are logged in'
+        login_success.classList.add('login_success')
     }
 })}
 
