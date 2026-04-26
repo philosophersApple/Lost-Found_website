@@ -43,10 +43,11 @@ body a{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 #signup_form {
     width: 100%;
-    max-width: 380px;
+    max-width: 400px;
     padding: 25px;
     border-radius: 12px;
     background: #ffffff;
@@ -56,6 +57,7 @@ body a{
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-wrap: nowrap;
     margin-bottom: 15px;
     position: relative;
 }
@@ -69,6 +71,8 @@ body a{
     border: 1px solid #ccc;
     border-radius: 6px;
     outline: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 #signup_form input:hover{
     border-color: rgba(61, 57, 57, 0.479);
@@ -163,4 +167,26 @@ form p a{
     align-items: center;
     margin-bottom: 0px;
     padding: 5px;
+}
+
+/* RESPONSIVE */
+@media  (max-width:480px) {
+    #signup_form{
+        padding: 15px;
+        width: 300px;
+        margin-top: -100px;
+    }
+    #signup_form h2{
+        font-size: 20px;
+    }
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .navbar ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
 }
