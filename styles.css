@@ -170,31 +170,88 @@ footer{
 /* Home */
 .title{
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
+    margin:0 30px 20px 0px;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 2px 2px rgba(0,0,0,0.05);
 }
 .title div .lost{
     background-color:rgba(241, 42, 7, 0.959);
     margin-right: 10px;
-    padding: 5px;
     color: whitesmoke;
     font-size: 1rem;
+    padding: 8px;
+    border-radius: 10px;
 }
 .title div .found{
     background-color: rgb(31, 187, 31);
-    padding: 5px;
     color: whitesmoke;
     font-size: 1rem;
+    padding: 8px;
+    border-radius: 10px;
 }
-
-
-
-
-
-
-
+.actions{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    width: 95%;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.actions input{
+    border-radius: 8px;
+    border: 1px solid #555;
+    padding: 12px;
+    width: 98%;
+}
+.actions button{
+    border: none;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.actions button:hover{
+    background-color: #dbd7d7;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 20px;
+}
+.dropdown{
+    list-style: none;
+    padding: 0;
+}
+.dropdown_toggle{
+    position: relative;
+    border: 1px solid #555;
+    border-radius: 8px;
+    width: 100%;
+}
+.dropdown a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+}
+.dropdown_menu{
+    display: none;
+    position:absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 150px;
+    border-radius: 8px;
+    list-style: none;
+}
+.dropdown_menu li a:hover{
+    background-color: #f5f5;
+}
 
 /* RESPONSIVE */
 @media  (max-width:480px) {

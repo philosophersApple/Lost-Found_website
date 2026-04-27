@@ -15,6 +15,9 @@ const login_form = document.getElementById('login_form')
 const login_email = document.getElementById('login_email');
 const login_password = document.getElementById('login_password');
 const login_success = document.getElementById('login_success');
+const allColor = document.querySelector('.all');
+const lostColor = document.querySelector('.lost')
+const foundColor = document.querySelector('.found');
 
 if(signup_form){
     signup_form.addEventListener('submit',(e) => {
@@ -102,3 +105,9 @@ clearError(repeat_password, repeat_password_error)
 clearError(login_email,login_email_error)
 clearError(login_password,login_password_error)
 
+function allColor(){
+    allColor.addEventListener('click',()=>{
+        allColor.style.backgroundColor = 'red'
+    })
+}
+allColor()
